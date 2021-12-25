@@ -48,9 +48,7 @@ Your final notebook must:
 
 Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
-* Create a heat map that displays the humidity for every city from the part I of the homework.
-
-  ![heatmap](Images/heatmap.png)
+* Create a heat map that displays the humidity for every city from the part I.
 
 * Narrow down the DataFrame to find your ideal weather condition. For example:
 
@@ -62,14 +60,9 @@ Now let's use your skills in working with weather data to plan future vacations.
 
   * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
 
-  * **Note:** Feel free to adjust to your specifications but be sure to limit the number of rows returned by your API requests to a reasonable number.
-
 * Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
-* Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
-
-  ![hotel map](Images/hotel_map.png)
-
+* Plot the hotels on top of the humidity heatmap.
 ### Copyright
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

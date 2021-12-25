@@ -1,4 +1,4 @@
-# Python API Homework - What's the Weather Like?
+# What's the Weather Like?
 
 ## Background
 
@@ -10,17 +10,6 @@ But, if pressed, how would you **prove** it?
 
 ![Equator](Images/equatorsign.png)
 
-### Before You Begin
-
-1. Create a new repository for this project called `python-api-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for both of the  Python Challenges. Use folder names corresponding to the challenges: **WeatherPy**.
-
-4. Inside the folder that you just created, add new files called `WeatherPy.ipynb` and `VacationPy.ipynb`. These will be the main scripts to run for each analysis.
-
-5. Push the above changes to GitHub.
 
 ## Part I - WeatherPy
 
@@ -59,10 +48,6 @@ Your final notebook must:
 
 Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
-* **Note:** Remember that any API usage beyond the $200 credit will be charged to your personal account. You can set quotas and limits to your daily requests to be sure you can't be charged. Check out [Google Maps Platform Billing](https://developers.google.com/maps/billing/gmp-billing#monitor-and-restrict-consumption) and [Manage your cost of use](https://developers.google.com/maps/documentation/javascript/usage-and-billing#set-caps) for more information.
-
-* **Note:** if you having trouble displaying the maps try running `jupyter nbextension enable --py gmaps` in your environment and retry.
-
 * Create a heat map that displays the humidity for every city from the part I of the homework.
 
   ![heatmap](Images/heatmap.png)
@@ -85,16 +70,80 @@ Now let's use your skills in working with weather data to plan future vacations.
 
   ![hotel map](Images/hotel_map.png)
 
-As final considerations:
-
-* Create a new GitHub repository for this project called `API-Challenge` (note the kebab-case). **Do not add to an existing repo**
-* You must complete your analysis using a Jupyter notebook.
-* You must use the Matplotlib or Pandas plotting libraries.
-* For Part I, you must include a written description of three observable trends based on the data.
-* For Part II, you must include a screenshot of the heatmap you create and include it in your submission.
-* You must use proper labelling of your plots, including aspects like: Plot Titles (with date of analysis) and Axes Labels.
-* For max intensity in the heat map, try setting it to the highest humidity found in the data set.
-
 ### Copyright
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+## **Summary**:
+## **Languages used**:
+- Python
+
+## **Python Packages Used**:
+- Pandas
+- Matplotlib
+- citipy
+- requests
+- json
+- numpy
+- spicy
+- random
+- pprint
+- gmaps
+  
+## **Conclusions**
+- We can see from the analysis that as latitude approaches 0 (the equator), the temperature increases. With high correlation values for both southern and northen hemispheres, suggesting our conclusion may be true.
+- We can also see that when latitude is 0, the humidty is higher than it is at other latitude values. With very weak correlation values for both northern and southern hemispheres, suggesting our conclusion may be false.
+- From the analysis, wind speed appears to approach 0 as latitude approaches 0. With very weak correlation values for both northern and southern hemispheres, suggesting our conclusion may be false.
+
+## **Screenshots**
+## **Latitude Vs Temperature**
+![Latitude Vs Temp](/WeatherPy/Lat_VS_Temp.png)
+
+## **Latitude Vs Temperature (Southern Hemisphere)**
+![Latitude Vs Temp (Southern)](/WeatherPy/Latitude_Vs_Temp(Southern).png)
+
+## **Latitude Vs Temperature (Northern Hemisphere)**
+![Lat Vs Temp](/WeatherPy/Latitude_Vs_Temp(Northen).png)
+
+## **Latitude Vs Humidity**
+![Latitude Vs Humidity](/WeatherPy/Latitude_Vs_Humidity.png)
+
+## **Latitude Vs Windspeed**
+![Latitude Vs WindSpeed](/WeatherPy/Latitude_Vs_WindSpeed.png)
+
+## **Latitude Vs Cloudiness**
+![Latitude Vs Cloudiness](/WeatherPy/Latitude_Vs_Cloudiness.png)
+
+## **Running the jupyter notebooks**
+1. Before running any of the jupyter notebooks please install needed packages running the following code in the terminal.
+         
+        pip install pandas
+        pip install citipy
+        pip install requests
+        pip install json
+        pip install matplotlib
+        pip install numpy
+        pip install pprint
+        pip install spicy
+        pip install gmaps
+
+Or run this code in the first Jupyter Notebook
+
+        ! pip install --user pandas
+        ! pip install --user citipy
+        ! pip install --user requests
+        ! pip install --user json
+        ! pip install --user matplotlib
+        ! pip install --user numpy
+        ! pip install --user spicy
+        ! pip install --user pprint
+        ! pip install --user gmaps
+1. Sign up to [Open Weather API](https://openweathermap.org/api) and insert your API key in the *api_keys.py* .
+   
+2. Sign up to [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview) and insert your API key in the *api_keys.py*.
+   
+3. Run the file *WeatherPy.ipynb.ipynb* (This may take up to 10 min)
+
+4. **Note: There is a bug in the gmaps module itself that causes the map to not load. A solution to this is to open a new jupter notebook and rerun the code.**
+
+    Run the file *VacationPy.ipynb* 

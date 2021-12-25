@@ -100,19 +100,25 @@ Now let's use your skills in working with weather data to plan future vacations.
 ![Latitude Vs Temp](/WeatherPy/Lat_VS_Temp.png)
 
 ## **Latitude Vs Temperature (Southern Hemisphere)**
-![Latitude Vs Temp (Southern)](/WeatherPy/Latitude_Vs_Temp(Southern).png)
+![Latitude Vs Temp (Southern)](WeatherPy/Latitude_Vs_Temp(Southern).png)
 
 ## **Latitude Vs Temperature (Northern Hemisphere)**
-![Lat Vs Temp](/WeatherPy/Latitude_Vs_Temp(Northen).png)
+![Lat Vs Temp](WeatherPy/Latitude_Vs_Temp(Northen).png)
 
 ## **Latitude Vs Humidity**
-![Latitude Vs Humidity](/WeatherPy/Latitude_Vs_Humidity.png)
+![Latitude Vs Humidity](WeatherPy/Latitude_Vs_Humidity.png)
 
 ## **Latitude Vs Windspeed**
-![Latitude Vs WindSpeed](/WeatherPy/Latitude_Vs_WindSpeed.png)
+![Latitude Vs WindSpeed](WeatherPy/Latitude_Vs_WindSpeed.png)
 
 ## **Latitude Vs Cloudiness**
-![Latitude Vs Cloudiness](/WeatherPy/Latitude_Vs_Cloudiness.png)
+![Latitude Vs Cloudiness](WeatherPy/Latitude_Vs_Cloudiness.png)
+
+## **Heatmap**
+![Heatmap](WeatherPy/heatmap.png)
+
+## **Locations**
+![Locations](WeatherPy/Locations.png)
 
 ## **Running the jupyter notebooks**
 1. Before running any of the jupyter notebooks please install needed packages running the following code in the terminal.
